@@ -1,73 +1,78 @@
 \documentclass[a4paper,11pt,dvipdfmx]{ujarticle}
-% パッケージ
+
 \usepackage{graphicx}
 \usepackage{url}
-% レイアウト指定を記述したファイルの読み込み
 \input{layout}
 
-% タイトルと氏名を変更せよ．
-\title{タイトル}
-\author{蓑原 隆}
+\title{日本におけるデジタル化の状況}
+\author{G68442026 張 宇航}
+\date{2026年7月6日}
 
 \begin{document}
 
-\maketitle %ここにタイトルが入る
+\maketitle
 
-% ここから本文
-% 節見出し: \section{}
-% を使う
+\section{デジタル競争力ランキング}
 
-% 本文(1)
-%  参考文献の参照: \cite{}
-%  図番号の参照： \ref{}
-% を使う
-% 文献データベースのキーワードは oecd と imd
-% になっている．
+国際経営開発研究所(IMD)の調査\cite{imd}によると，
+日本のデジタル競争力のランキングは図\ref{fig:digital-ranking}に示すように，
+調査対象の64カ国中，総合で28位，知識分野で25位となっている．
 
-% 図の挿入
-% \includegraphics{}
-% を
-% \begin{figure}[htbp]
-% \end{figure}
-% で囲み
-% \caption{}
-% で図のタイトルを入れる．
-% \label{}
-% を使って図番号が参照できるようにする
-% また，
-% \centering
-% で図が中央に来るようにする
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.55\linewidth]{digital-ranking.png}
+    \caption{デジタル競争力ランキング(64カ国中)}
+    \label{fig:digital-ranking}
+\end{figure}
 
-% ーーー
-% 節見出し(2)
+\section{ブロードバンドの整備状況}
 
-% 本文(2)
+OECDによるブロードバンド普及状況の調査\cite{oecd}によると，
+表\ref{tbl:broadband}に示すように，
+日本における100人あたりのモバイルブロードバンドの加入者数は190.5で，
+第1位になっている．
+2位はエストニアで，3位は米国と続く．
 
-% 表の挿入
-% \begin{tabular}
-% \end{tabular}    
-% による表の記述を 
-% \begin{table}[htbp]
-% \end{table}
-% で囲み
-% \caption{}
-% で表のタイトルを入れる．
-% \label{}
-% を使って表番号が参照できるようにする
-% また，
-% \centering
-% で表が中央に来るようにする
+\begin{table}[htbp]
+    \centering
+    \caption{モバイルブロードバンドの加入者数(100人あたり)}
+    \label{tbl:broadband}
 
-% ーーー
-% 見出し(3)
-% 考察
-%
-% \begin{itemize}
-% \end{itemize}
-% を使って箇条書きで記述する
+    \begin{tabular}{|r|l|r|}\hline
+        順位 & 国名 & 加入者数 \\
+        \hline
+        1位 & 日本 & 190.5 \\
+        \hline
+        2位 & エストニア & 179.9 \\
+        \hline
+        3位 & 米国 & 169.0 \\
+        \hline
+        4位 & フィンランド & 157.0 \\
+        \hline
+        5位 & デンマーク & 141.7 \\
+        \hline
+        6位 & ラトビア & 141.6 \\
+        \hline
+        7位 & イスラエル & 139.9 \\
+        \hline
+        8位 & オランダ & 133.7 \\
+        \hline
+        9位 & ポーランド & 131.3 \\
+        \hline
+        10位 & スウェーデン & 127.2 \\
+        \hline
+    \end{tabular}
+\end{table}
 
-% ここに参考文献が入る
-%
+\section{考察}
+
+以上の結果から，次のように考えた．
+\begin{itemize}
+    \item 日本はモバイルブロードバンドの加入者数では高い水準にあるが，デジタル競争力の総合順位は上位国に比べて低い．通信環境の整備だけでなく，その環境を社会全体で活用する力が重要である．
+    \item 知識分野の順位が25位であることから，デジタル人材の育成や，社会人の学び直しを進める必要があると考える．
+    \item 整備された通信インフラを，行政サービス，企業のDX，教育などの分野でより積極的に利用すれば，日本のデジタル化はさらに進むと考える．
+\end{itemize}
+
 \bibliographystyle{junsrt}
 \bibliography{exercise.bib}
 
